@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Vitour</title>
+    <meta name="description" content="">
+    <meta name="robots" content="noindex, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Bootstrap 5 -->
+    <!--font aswome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--font aswome -->
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="sass/main.css">
+    <!-- Stylesheets -->
+     <!--Slick css-->
+    <link rel="stylesheet" type="text/css" href="sass/slick.css">
+    <link rel="stylesheet" type="text/css" href="sass/slick-theme.css">
+    <!--Slick css-->
+    <!--aos css-->
+    <link rel="stylesheet" type="text/css" href="sass/aos.css">
+    <!--Animate css-->
+    <link rel="stylesheet" type="text/css" href="sass/animate.css">
+    <link rel="stylesheet" href="sass/fancybox.min.css">
+
+    <style>
+      .item-text {
+        opacity: 0;
+        white-space: nowrap;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .is-visible {
+        opacity: 1;
+        position: relative;
+      }
+      .clip span {
+        display: inline-block;
+      }
+      .cd-words-wrapper {
+        overflow: hidden;
+        vertical-align: top;
+        position: relative;
+      }
+      .cd-words-wrapper::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background-color: #aebcb9;
+      }
+    </style>
+  </head>
+  <body>
+    <!--header area-->
+    <header>
+      <section class="top-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-8 col-xl-6">
+              <div class="top-header-left">
+                <ul class="d-flex justify-content-between">
+                  <li class="d-none d-md-block">
+                    <a href="#"><span><i class="fa-regular fa-calendar-days"></i></span> <span id="current-day"></span> <span id="current-date"></span>
+                    <span id="current-time"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span><i class="fa-regular fa-envelope"></i></span> Info@Webmail.com</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><i class="fa-solid fa-phone"></i></span> 684 555-0102 490</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 col-xl-6 d-none d-lg-block">
+              <div class="top-header-right">
+                <ul class="d-flex align-items-center">
+                  <li>
+                    <p>Follow Us On:</p>
+                  </li>
+                  <li>
+                    <ul class="d-flex">
+                      <li>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="header-area text-center bg-white shadow">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid p-0">
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="logo">
+              </a>
+              <img src="images/fl1.png" alt="" class="flight-pic position-absolute">
+              <button data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: transparent; border: none;">
+                <line class="line1"></line>
+                <line class="line2"></line>
+                <line class="line3"></line>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="trainers.html">Gallery</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Destinations
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="personal-training.html">Destination-1</a></li>
+                      <li><a class="dropdown-item" href="">Destination-2</a></li>
+                      <li><a class="dropdown-item" href="#">Destination-3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tour
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="personal-training.html">Destination-1</a></li>
+                      <li><a class="dropdown-item" href="">Destination-2</a></li>
+                      <li><a class="dropdown-item" href="#">Destination-3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <button type="button" class="common_btn btn" data-bs-toggle="modal" data-bs-target="#form-modal">Book Now</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+    </header>
+    <!--header area-->
+
+    <!--Banner area-->
+    <section class="banner-area">
+      <div class="banner_slider p-0">
+        <div class="slider slider1 position-relative">
+          <div class="container">
+            <div class="slider_content">
+              <h3 class="title" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">Explore the  World</h3>
+              <h1 data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">Tour Travel &amp; Adeventure
+                <span class="animationtext clip text-main">
+                  <span class="cd-words-wrapper">
+                      <span class="item-text is-visible">Camping</span>
+                      <span class="item-text is-hidden">Riding</span>
+                      <span class="item-text is-hidden">Diving</span>
+                  </span>                                          
+                </span>
+              </h1>
+              <p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">Welcome to our Print 128 website! We are a professional and reliable printing company that offers a wide range of printing services to</p>
+              <button type="button" class="common_btn btn">Contact Us</button>
+            </div>
+            <img src="images/mask-fly.png" alt="" class="plane-animate position-absolute">
+            <div class="booking-title tf-anime-rorate d-none d-lg-block">
+              <h6 class="booking">Booking</h6>
+              <span></span>
+          </div>
+          </div>
+        </div>
+        <div class="slider slider2 position-relative">
+          <div class="container">
+            <div class="slider_content animate__animated animate__fadeInUp">
+              <h3 class="title">Explore the  World</h3>
+              <h1>Tour Travel &amp; Adeventure
+                <span class="animationtext clip text-main">
+                  <span class="cd-words-wrapper">
+                      <span class="item-text is-visible">Camping</span>
+                      <span class="item-text is-hidden">Riding</span>
+                      <span class="item-text is-hidden">Diving</span>
+                  </span>                                          
+                </span>
+              </h1>
+              <p>Welcome to our Print 128 website! We are a professional and reliable printing company that offers a wide range of printing services to</p>
+              <button type="button" class="common_btn btn">Contact Us</button>
+            </div>
+            <img src="images/mask-fly.png" alt="" class="plane-animate position-absolute">
+            <div class="booking-title tf-anime-rorate d-none d-lg-block">
+              <h6 class="booking">Booking</h6>
+              <span></span>
+          </div>
+          </div>
+        </div>
+        <div class="slider slider3 position-relative">
+          <div class="container">
+            <div class="slider_content animate__animated animate__fadeInUp">
+              <h3 class="title">Explore the  World</h3>
+              <h1>Tour Travel &amp; Adeventure
+                <span class="animationtext clip text-main">
+                  <span class="cd-words-wrapper">
+                      <span class="item-text is-visible">Camping</span>
+                      <span class="item-text is-hidden">Riding</span>
+                      <span class="item-text is-hidden">Diving</span>
+                  </span>                                          
+                </span>
+              </h1>
+              <p>Welcome to our Print 128 website! We are a professional and reliable printing company that offers a wide range of printing services to</p>
+              <button type="button" class="common_btn btn">Contact Us</button>
+            </div>
+            <img src="images/mask-fly.png" alt="" class="plane-animate position-absolute">
+            <div class="booking-title tf-anime-rorate d-none d-lg-block">
+              <h6 class="booking">Booking</h6>
+              <span></span>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!--Banner area-->
+
+    <!--Search area-->
+    <section class="search-area" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+      <div class="container">
+        <div class="search-form shadow">
+          <form action="" method="post">
+            <ul class="d-lg-flex justify-content-between align-items-center">
+              <li>
+                <div class="search-box">
+                  <ul class="d-flex align-items-center">
+                    <li class="icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </li>
+                    <li>
+                      <label>Destination</label>
+                      <select class="form-select" required aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="search-box">
+                  <ul class="d-flex align-items-center">
+                    <li class="icon">
+                      <i class="fa-solid fa-subscript"></i>
+                    </li>
+                    <li>
+                      <label>Type</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Sigle Booking</option>
+                        <option value="1">Couple Booking</option>
+                        <option value="2">Group Booking</option>
+                      </select>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="search-box">
+                  <ul class="d-flex align-items-center">
+                    <li class="icon">
+                      <i class="fa-regular fa-clock"></i>
+                    </li>
+                    <li>
+                      <label>Duration</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>2-4 days tour</option>
+                        <option value="1">3-4 days tour</option>
+                        <option value="2">4-5 days tour</option>
+                        <option value="3">5-6 days tour</option>
+                      </select>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="search-box">
+                  <ul class="d-flex align-items-center">
+                    <li class="icon">
+                      <i class="fa-solid fa-person-circle-question"></i>
+                    </li>
+                    <li>
+                      <label>Guest</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="search-btn">
+                  <button type="submit" class="common_btn">Search</button>
+                </div>
+              </li>
+            </ul>
+          </form>
+        </div>
+        <div class="people-box d-flex align-items-center">
+          <img src="images/6.jpg" alt="Image" class="item">
+          <img src="images/5.jpg" alt="Image" class="item">
+          <img src="images/4.jpg" alt="Image" class="item">
+          <img src="images/3.jpg" alt="Image" class="item">
+          <img src="images/1.jpg" alt="Image" class="item">
+          <img src="images/2.jpg" alt="Image" class="item">
+          <div class="plus-icon item">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <p>
+            <span class="blink_me">2,500</span> people booked Tommorow and Even in last 24 hours
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Search area-->
+
+    <!--About area-->
+    <section class="about-area p-100" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-6">
+            <div class="about-left position-relative" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+              <img src="images/image-video.png" alt="" class="about-pic">
+              <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal" class=""><i class="fa-solid fa-play"></i></a>
+              <img src="images/vali.png" alt="" class="about-trolley tf-anime-rorate">
+              <img src="images/enjoy.png" alt="" class="enjoy-pic">
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-5 offset-lg-1">
+            <div class="about-right" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+              <div class="title-box">
+                <h3 class="title">Explore the  World</h3>
+                <h4 class="description">Great opportunity for adventure & travels</h4>
+                <p>
+                  Welcome to our Print 128 website! We are a professional and reliable printing company that offers a wide range of printing services to
+                </p>
+              </div>
+              <div class="travel-guide">
+                <ul class="d-md-flex">
+                  <li class="shadow">
+                    <i class="fa-solid fa-person-walking-luggage"></i>
+                    <h5>Trusted travel guide</h5>
+                    <p>
+                      Welcome to our Print 128 wesit! company that offers a wide
+                    </p>
+                  </li>
+                  <li class="shadow personalized-box">
+                    <i class="fa-solid fa-book-tanakh"></i>
+                    <h5>Pesonalized Trips</h5>
+                    <p>
+                      Welcome to our Print 128 wesit! company that offers a wide
+                    </p>
+                  </li>
+                </ul>
+                <ul class="d-flex about-btn align-items-center">
+                  <li>
+                    <button class="common_btn">Read More</button>
+                  </li>
+                  <li>
+                    <p>
+                      <span><img src="images/map.png" alt=""></span>
+                    Checkout Beautiful Places With Us.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--About area-->
+
+    <!--Tab area-->
+    <section class="tab-area p-100" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+      <div class="container">
+        <div class="title-box text-center">
+          <h3 class="title">Explore the  World</h3>
+          <h4 class="description">Amazing Featured Tour Package the world</h4>
+        </div>
+        <div class="row align-items-center mt-5">
+          <div class="col-lg-12">
+            <div class="product-tab">
+              <ul class="tabs d-flex justify-content-center">
+                <li class="tab-link current" data-tab="newyork">
+                  <p>New York</p>
+                </li>
+                <li class="tab-link" data-tab="london">
+                  <p>London</p>
+                </li>
+                <li class="tab-link" data-tab="tokyo">
+                  <p>Tokyo</p>
+                </li>
+                <li class="tab-link" data-tab="los-angelas">
+                  <p>Los Angelas</p>
+                </li>
+                <li class="tab-link" data-tab="manali">
+                  <p>Manali</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <div class="col-lg-12">
+              <div id="newyork" class="tab-content current">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="tab-box position-relative">
+                      <div class="tab-pic position-relative">
+                        <img src="images/tab-1.jpg" alt="">
+                        <span class="position-absolute features">Features</span>
+                        <span class="position-absolute bestsellers shadow">Bestsellers</span>
+                      </div>
+                      <div class="tab-details">
+                        <p class="tab-map"><span><i class="fa-solid fa-location-dot"></i></span> United States USA</p>
+                        <h4 class="mt-4">Days and 6 nights From Moscow</h4>
+                        <div class="star-box mt-4">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span>(5 reviews)</span>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-between mt-4">
+                          <li>
+                            <span><i class="fa-regular fa-clock"></i></span> 5 Days
+                          </li>
+                          <li>
+                            <span><i class="fa-solid fa-person"></i></span> 12 Persons
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="tab-box position-relative">
+                      <div class="tab-pic position-relative">
+                        <img src="images/tab-2.jpg" alt="">
+                        <span class="position-absolute features">Features</span>
+                        <span class="position-absolute bestsellers shadow">Trending</span>
+                      </div>
+                      <div class="tab-details">
+                        <p class="tab-map"><span><i class="fa-solid fa-location-dot"></i></span> United States USA</p>
+                        <h4 class="mt-4">Days and 6 nights From Moscow</h4>
+                        <div class="star-box mt-4">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span>(5 reviews)</span>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-between mt-4">
+                          <li>
+                            <span><i class="fa-regular fa-clock"></i></span> 5 Days
+                          </li>
+                          <li>
+                            <span><i class="fa-solid fa-person"></i></span> 12 Persons
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="tab-box position-relative">
+                      <div class="tab-pic position-relative">
+                        <img src="images/tab-3.jpg" alt="">
+                        <span class="position-absolute features">Features</span>
+                        <span class="position-absolute bestsellers shadow">Hot Sale</span>
+                      </div>
+                      <div class="tab-details">
+                        <p class="tab-map"><span><i class="fa-solid fa-location-dot"></i></span> United States USA</p>
+                        <h4 class="mt-4">Days and 6 nights From Moscow</h4>
+                        <div class="star-box mt-4">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span>(5 reviews)</span>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-between mt-4">
+                          <li>
+                            <span><i class="fa-regular fa-clock"></i></span> 5 Days
+                          </li>
+                          <li>
+                            <span><i class="fa-solid fa-person"></i></span> 12 Persons
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="tab-box position-relative">
+                      <div class="tab-pic position-relative">
+                        <img src="images/tab-4.jpg" alt="">
+                        <span class="position-absolute features">Features</span>
+                        <span class="position-absolute bestsellers shadow">Bestsellers</span>
+                      </div>
+                      <div class="tab-details">
+                        <p class="tab-map"><span><i class="fa-solid fa-location-dot"></i></span> United States USA</p>
+                        <h4 class="mt-4">Days and 6 nights From Moscow</h4>
+                        <div class="star-box mt-4">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span>(5 reviews)</span>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-between mt-4">
+                          <li>
+                            <span><i class="fa-regular fa-clock"></i></span> 5 Days
+                          </li>
+                          <li>
+                            <span><i class="fa-solid fa-person"></i></span> 12 Persons
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="london" class="tab-content">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="tab-box position-relative">
+                      <div class="tab-pic position-relative">
+                        <img src="images/tab-4.jpg" alt="">
+                        <span class="position-absolute features">Features</span>
+                        <span class="position-absolute bestsellers shadow">Bestsellers</span>
+                      </div>
+                      <div class="tab-details">
+                        <p class="tab-map"><span><i class="fa-solid fa-location-dot"></i></span> United States USA</p>
+                        <h4 class="mt-4">Days and 6 nights From Moscow</h4>
+                        <div class="star-box mt-4">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span>(5 reviews)</span>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-between mt-4">
+                          <li>
+                            <span><i class="fa-regular fa-clock"></i></span> 5 Days
+                          </li>
+                          <li>
+                            <span><i class="fa-solid fa-person"></i></span> 12 Persons
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="tab-box position-relative">
+                      <div class="tab-pic position-relative">
+                        <img src="images/tab-3.jpg" alt="">
+                        <span class="position-absolute features">Features</span>
+                        <span class="position-absolute bestsellers shadow">Bestsellers</span>
+                      </div>
+                      <div class="tab-details">
+                        <p class="tab-map"><span><i class="fa-solid fa-location-dot"></i></span> United States USA</p>
+                        <h4 class="mt-4">Days and 6 nights From Moscow</h4>
+                        <div class="star-box mt-4">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span>(5 reviews)</span>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-between mt-4">
+                          <li>
+                            <span><i class="fa-regular fa-clock"></i></span> 5 Days
+                          </li>
+                          <li>
+                            <span><i class="fa-solid fa-person"></i></span> 12 Persons
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="tab-box position-relative">
+                      <div class="tab-pic position-relative">
+                        <img src="images/tab-1.jpg" alt="">
+                        <span class="position-absolute features">Features</span>
+                        <span class="position-absolute bestsellers shadow">Bestsellers</span>
+                      </div>
+                      <div class="tab-details">
+                        <p class="tab-map"><span><i class="fa-solid fa-location-dot"></i></span> United States USA</p>
+                        <h4 class="mt-4">Days and 6 nights From Moscow</h4>
+                        <div class="star-box mt-4">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span>(5 reviews)</span>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-between mt-4">
+                          <li>
+                            <span><i class="fa-regular fa-clock"></i></span> 5 Days
+                          </li>
+                          <li>
+                            <span><i class="fa-solid fa-person"></i></span> 12 Persons
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="tab-box position-relative">
+                      <div class="tab-pic position-relative">
+                        <img src="images/tab-2.jpg" alt="">
+                        <span class="position-absolute features">Features</span>
+                        <span class="position-absolute bestsellers shadow">Bestsellers</span>
+                      </div>
+                      <div class="tab-details">
+                        <p class="tab-map"><span><i class="fa-solid fa-location-dot"></i></span> United States USA</p>
+                        <h4 class="mt-4">Days and 6 nights From Moscow</h4>
+                        <div class="star-box mt-4">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span>(5 reviews)</span>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-between mt-4">
+                          <li>
+                            <span><i class="fa-regular fa-clock"></i></span> 5 Days
+                          </li>
+                          <li>
+                            <span><i class="fa-solid fa-person"></i></span> 12 Persons
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tokyo" class="tab-content">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="tab-box position-relative">
+                      <div class="tab-pic position-relative">
+                        <img src="images/tab-1.jpg" alt="">
+                        <span class="position-absolute features">Features</span>
+                        <span class="position-absolute bestsellers shadow">Bestsellers</span>
+                      </div>
+                      <div class="tab-details">
+                        <p class="tab-map"><span><i class="fa-solid fa-location-dot"></i></span> United States USA</p>
+                        <h4 class="mt-4">Days and 6 nights From Moscow</h4>
+                        <div class="star-box mt-4">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span>(5 reviews)</span>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-between mt-4">
+                          <li>
+                            <span><i class="fa-regular fa-clock"></i></span> 5 Days
+                          </li>
+                          <li>
+                            <span><i class="fa-solid fa-person"></i></span> 12 Persons
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="tab-box position-relative">
+                      <div class="tab-pic position-relative">
+                        <img src="images/tab-2.jpg" alt="">
+                        <span class="position-absolute features">Features</span>
+                        <span class="position-absolute bestsellers shadow">Trending</span>
+                      </div>
+                      <div class="tab-details">
+                        <p class="tab-map"><span><i class="fa-solid fa-location-dot"></i></span> United States USA</p>
+                        <h4 class="mt-4">Days and 6 nights From Moscow</h4>
+                        <div class="star-box mt-4">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span>(5 reviews)</span>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-between mt-4">
+                          <li>
+                            <span><i class="fa-regular fa-clock"></i></span> 5 Days
+                          </li>
+                          <li>
+                            <span><i class="fa-solid fa-person"></i></span> 12 Persons
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="tab-box position-relative">
+                      <div class="tab-pic position-relative">
+                        <img src="images/tab-3.jpg" alt="">
+                        <span class="position-absolute features">Features</span>
+                        <span class="position-absolute bestsellers shadow">Hot Sale</span>
+                      </div>
+                      <div class="tab-details">
+                        <p class="tab-map"><span><i class="fa-solid fa-location-dot"></i></span> United States USA</p>
+                        <h4 class="mt-4">Days and 6 nights From Moscow</h4>
+                        <div class="star-box mt-4">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span>(5 reviews)</span>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-between mt-4">
+                          <li>
+                            <span><i class="fa-regular fa-clock"></i></span> 5 Days
+                          </li>
+                          <li>
+                            <span><i class="fa-solid fa-person"></i></span> 12 Persons
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="tab-box position-relative">
+                      <div class="tab-pic position-relative">
+                        <img src="images/tab-4.jpg" alt="">
+                        <span class="position-absolute features">Features</span>
+                        <span class="position-absolute bestsellers shadow">Bestsellers</span>
+                      </div>
+                      <div class="tab-details">
+                        <p class="tab-map"><span><i class="fa-solid fa-location-dot"></i></span> United States USA</p>
+                        <h4 class="mt-4">Days and 6 nights From Moscow</h4>
+                        <div class="star-box mt-4">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span>(5 reviews)</span>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-between mt-4">
+                          <li>
+                            <span><i class="fa-regular fa-clock"></i></span> 5 Days
+                          </li>
+                          <li>
+                            <span><i class="fa-solid fa-person"></i></span> 12 Persons
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="los-angelas" class="tab-content">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="tab-box position-relative">
+                      <div class="tab-pic position-relative">
+                        <img src="images/tab-4.jpg" alt="">
+                        <span class="position-absolute features">Features</span>
+                        <span class="position-absolute bestsellers shadow">Bestsellers</span>
+                      </div>
+                      <div class="tab-details">
+                        <p class="tab-map"><span><i class="fa-solid fa-location-dot"></i></span> United States USA</p>
+                        <h4 class="mt-4">Days and 6 nights From Moscow</h4>
+                        <div class="star-box mt-4">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span>(5 reviews)</span>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-between mt-4">
+                          <li>
+                            <span><i class="fa-regular fa-clock"></i></span> 5 Days
+                          </li>
+                          <li>
+                            <span><i class="fa-solid fa-person"></i></span> 12 Persons
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="tab-box position-relative">
+                      <div class="tab-pic position-relative">
+                        <img src="images/tab-3.jpg" alt="">
+                        <span class="position-absolute features">Features</span>
+                        <span class="position-absolute bestsellers shadow">Bestsellers</span>
+                      </div>
+                      <div class="tab-details">
+                        <p class="tab-map"><span><i class="fa-solid fa-location-dot"></i></span> United States USA</p>
+                        <h4 class="mt-4">Days and 6 nights From Moscow</h4>
+                        <div class="star-box mt-4">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span>(5 reviews)</span>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-between mt-4">
+                          <li>
+                            <span><i class="fa-regular fa-clock"></i></span> 5 Days
+                          </li>
+                          <li>
+                            <span><i class="fa-solid fa-person"></i></span> 12 Persons
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="tab-box position-relative">
+                      <div class="tab-pic position-relative">
+                        <img src="images/tab-1.jpg" alt="">
+                        <span class="position-absolute features">Features</span>
+                        <span class="position-absolute bestsellers shadow">Bestsellers</span>
+                      </div>
+                      <div class="tab-details">
+                        <p class="tab-map"><span><i class="fa-solid fa-location-dot"></i></span> United States USA</p>
+                        <h4 class="mt-4">Days and 6 nights From Moscow</h4>
+                        <div class="star-box mt-4">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span>(5 reviews)</span>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-between mt-4">
+                          <li>
+                            <span><i class="fa-regular fa-clock"></i></span> 5 Days
+                          </li>
+                          <li>
+                            <span><i class="fa-solid fa-person"></i></span> 12 Persons
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="tab-box position-relative">
+                      <div class="tab-pic position-relative">
+                        <img src="images/tab-2.jpg" alt="">
+                        <span class="position-absolute features">Features</span>
+                        <span class="position-absolute bestsellers shadow">Bestsellers</span>
+                      </div>
+                      <div class="tab-details">
+                        <p class="tab-map"><span><i class="fa-solid fa-location-dot"></i></span> United States USA</p>
+                        <h4 class="mt-4">Days and 6 nights From Moscow</h4>
+                        <div class="star-box mt-4">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span>(5 reviews)</span>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-between mt-4">
+                          <li>
+                            <span><i class="fa-regular fa-clock"></i></span> 5 Days
+                          </li>
+                          <li>
+                            <span><i class="fa-solid fa-person"></i></span> 12 Persons
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="manali" class="tab-content">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="tab-box position-relative">
+                      <div class="tab-pic position-relative">
+                        <img src="images/tab-1.jpg" alt="">
+                        <span class="position-absolute features">Features</span>
+                        <span class="position-absolute bestsellers shadow">Bestsellers</span>
+                      </div>
+                      <div class="tab-details">
+                        <p class="tab-map"><span><i class="fa-solid fa-location-dot"></i></span> United States USA</p>
+                        <h4 class="mt-4">Days and 6 nights From Moscow</h4>
+                        <div class="star-box mt-4">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span>(5 reviews)</span>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-between mt-4">
+                          <li>
+                            <span><i class="fa-regular fa-clock"></i></span> 5 Days
+                          </li>
+                          <li>
+                            <span><i class="fa-solid fa-person"></i></span> 12 Persons
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="tab-box position-relative">
+                      <div class="tab-pic position-relative">
+                        <img src="images/tab-2.jpg" alt="">
+                        <span class="position-absolute features">Features</span>
+                        <span class="position-absolute bestsellers shadow">Trending</span>
+                      </div>
+                      <div class="tab-details">
+                        <p class="tab-map"><span><i class="fa-solid fa-location-dot"></i></span> United States USA</p>
+                        <h4 class="mt-4">Days and 6 nights From Moscow</h4>
+                        <div class="star-box mt-4">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span>(5 reviews)</span>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-between mt-4">
+                          <li>
+                            <span><i class="fa-regular fa-clock"></i></span> 5 Days
+                          </li>
+                          <li>
+                            <span><i class="fa-solid fa-person"></i></span> 12 Persons
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="tab-box position-relative">
+                      <div class="tab-pic position-relative">
+                        <img src="images/tab-3.jpg" alt="">
+                        <span class="position-absolute features">Features</span>
+                        <span class="position-absolute bestsellers shadow">Hot Sale</span>
+                      </div>
+                      <div class="tab-details">
+                        <p class="tab-map"><span><i class="fa-solid fa-location-dot"></i></span> United States USA</p>
+                        <h4 class="mt-4">Days and 6 nights From Moscow</h4>
+                        <div class="star-box mt-4">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span>(5 reviews)</span>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-between mt-4">
+                          <li>
+                            <span><i class="fa-regular fa-clock"></i></span> 5 Days
+                          </li>
+                          <li>
+                            <span><i class="fa-solid fa-person"></i></span> 12 Persons
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="tab-box position-relative">
+                      <div class="tab-pic position-relative">
+                        <img src="images/tab-4.jpg" alt="">
+                        <span class="position-absolute features">Features</span>
+                        <span class="position-absolute bestsellers shadow">Bestsellers</span>
+                      </div>
+                      <div class="tab-details">
+                        <p class="tab-map"><span><i class="fa-solid fa-location-dot"></i></span> United States USA</p>
+                        <h4 class="mt-4">Days and 6 nights From Moscow</h4>
+                        <div class="star-box mt-4">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span>(5 reviews)</span>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-between mt-4">
+                          <li>
+                            <span><i class="fa-regular fa-clock"></i></span> 5 Days
+                          </li>
+                          <li>
+                            <span><i class="fa-solid fa-person"></i></span> 12 Persons
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--Tab area-->
+
+    <!--Activities area-->
+    <section class="activities-area p-100 position-relative" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+      <div class="container">
+        <div class="activities-text text-center">
+          <h3>Activities</h3>
+        </div>
+        <div class="row align-items-center mt-5">
+          <div class="col-lg-12">
+            <div class="activities-tab">
+              <ul class="tabs d-flex justify-content-center align-items-center">
+                <li class="tab-link current" data-tab="camping">
+                  <img src="images/camping.png" alt="">
+                  <p>Camping</p>
+                </li>
+                <li class="tab-link" data-tab="adventure">
+                  <img src="images/location.png" alt="">
+                  <p>Adventure</p>
+                </li>
+                <li class="tab-link" data-tab="fishing">
+                  <img src="images/fishing.png" alt="">
+                  <p>Fishing</p>
+                </li>
+                <li class="tab-link" data-tab="hiking">
+                  <img src="images/hiking.png" alt="">
+                  <p>Hiking</p>
+                </li>
+                <li class="tab-link" data-tab="sports">
+                  <img src="images/sports.png" alt="">
+                  <p>Sports</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <div class="col-lg-12">
+              <div id="camping" class="tab-content current">
+                <div class="row">
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-1.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-1.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-2.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-2.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-3.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-3.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-4.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-4.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-3.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-3.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-4.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-4.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-1.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-1.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-2.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-2.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="adventure" class="tab-content">
+                <div class="row">
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-3.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-3.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-4.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-4.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-1.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-1.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-2.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-2.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="fishing" class="tab-content">
+                <div class="row">
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-1.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-1.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-2.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-2.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-3.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-3.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-4.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-4.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="hiking" class="tab-content">
+                <div class="row">
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-3.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-3.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-4.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-4.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-1.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-1.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-2.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-2.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="sports" class="tab-content">
+                <div class="row">
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-1.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-1.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-2.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-2.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-3.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-3.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3">
+                    <div class="tab-box">
+                      <div class="gallery-content" style="display: block;">
+                        <a href="images/tab-4.jpg" data-fancybox="mygallery" data-caption="menu-1" title="menu-1">
+                          <img src="images/tab-4.jpg" alt="menu-1">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="troley-box position-absolute">
+          <img src="images/fl1.png" alt="">
+        </div>
+        <div class="line-pic position-absolute">
+          <img src="images/mask-activiti.png" alt="">
+        </div>
+      </div>
+    </section>
+    <!--Activities area-->
+
+    <!--Review area-->
+    <section class="review-area p-100" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="review-left position-relative">
+              <img src="images/img8_01.webp" alt="" class="review-left-1 img-fluid">
+              <img src="images/img9_01.webp" alt="" class="review-left-2 img-fluid">
+            </div>
+          </div>
+          <div class="col-12 col-md-8">
+            <div class="review-right">
+              <div class="review_slider p-0">
+                <div class="slider position-relative">
+                  <div class="container">
+                    <div class="slider_content">
+                        <div class="review-title">
+                          <h2 class="mb-2">Piter Bowman</h2>
+                          <p><i>Business CEO</i></p>
+                        </div>
+                        <p class="description position-relative">
+                          “I ordered 2 of the multi coloured hydrangea plants very well packaged and very healthy looking no flowers but will hopefully come next year.”  
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider position-relative">
+                  <div class="container">
+                    <div class="slider_content">
+                        <div class="review-title">
+                          <h2 class="mb-2">Piter Bowman</h2>
+                          <p><i>Business CEO</i></p>
+                        </div>
+                        <p class="description position-relative">
+                          “I ordered 2 of the multi coloured hydrangea plants very well packaged and very healthy looking no flowers but will hopefully come next year.”  
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider position-relative">
+                  <div class="container">
+                    <div class="slider_content">
+                        <div class="review-title">
+                          <h2 class="mb-2">Piter Bowman</h2>
+                          <p><i>Business CEO</i></p>
+                        </div>
+                        <p class="description position-relative">
+                          “I ordered 2 of the multi coloured hydrangea plants very well packaged and very healthy looking no flowers but will hopefully come next year.”  
+                        </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Review area-->
+
+    <!--Get Started area-->
+    <section class="get-started-area p-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <div class="get-started-left d-flex align-items-center">
+              <div class="get-left-icon">
+                <img src="images/icon-action-box.svg" alt=""/>
+              </div>
+              <div class="get-left-content">
+                <h3>Ready to adventure and enjoy natural</h3>
+                <p>Lorem Ipsum Dolor Sit Amet, Consectetur Notted Adipisicin</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="get-started-right d-flex justify-content-between align-items-center">
+              <div class="get-right-icon">
+                <img src="images/icon-plane.svg" alt=""/>
+              </div>
+              <div class="get-right-content">
+                <button type="button" class="common_btn btn">Let's Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Get Started area-->
+
+    <!--Footer area-->
+    <section class="footer-area bg-dark p-100">
+      <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4 mb-lg-0">
+              <div class="footer-box">
+                <img src="images/logo-white.png" alt="logo" class="logo">
+                <p class="footer-desc">
+                  Vitour is a leading global travel company. The main service is providing tours
+                </p>
+                <div class="info-box">
+                  <p>
+                    <span><i class="fa-regular fa-envelope"></i></span> <a href="mailto:examplevitour@gmail.com">examplevitour@gmail.com
+                    </a>
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-phone"></i></span> <a href="tel:(+61) 555 0102 490">(+61) 555 0102 490
+                    </a>
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-diamond-turn-right"></i></span> <a href="6391 Elgin St. Celina, NYC 10299">6391 Elgin St. Celina, NYC 10299
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 col-md-6 col-lg-4 col-xl-2 mb-4 mb-lg-0 footer-link">
+              <div class="footer-box">
+                <h3>Our Company</h3>
+                <ul>
+                  <li>
+                    <a href="#">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#">Blog</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Team</a>
+                  </li>
+                </ul>
+                </div>
+            </div>
+            <div class="col-7 col-md-6 col-lg-4 col-xl-4 mt-lg-0 footer-gallery">
+              <div class="footer-box">
+                <h3>Our Gallery</h3>
+                <ul class="footer-gallery">
+                  <li>
+                    <img src="images/4.jpg" alt="">
+                  </li>
+                  <li>
+                    <img src="images/3.jpg" alt="">
+                  </li>
+                  <li>
+                    <img src="images/2.jpg" alt="">
+                  </li>
+                  <li>
+                    <img src="images/3.jpg" alt="">
+                  </li>
+                  <li>
+                    <img src="images/4.jpg" alt="">
+                  </li>
+                  <li>
+                    <img src="images/2.jpg" alt="">
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-12 col-xl-3">
+              <div class="footer-box">
+                <h3>Newsleter</h3>
+                <form action="" class="footer-form">
+                  <div class="form-box">
+                    <input type="email" placeholder="Enter email address">
+                    <button type="submit" class="common_btn"><i class="fa-regular fa-paper-plane"></i></button>
+                  </div>
+                  <div class="form-check ">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                    <label class="form-check-label" for="flexCheckDefault">
+                      I agree to all your terms and policies
+                    </label>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Footer area-->
+
+
+
+
+
+
+
+    <!--Form Modal-->
+    <div class="modal fade" id="form-modal" tabindex="-1" aria-labelledby="form-modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h3 class="text-center req-heading"><span>Book</span> For Query</h3>
+            <form action="" class="class-form">
+              <div class="container">
+                <div class="row">
+                  <div class="col-6">
+                    <label>First Name</label>
+                    <input type="text" placeholder="John" required>
+                  </div>
+                  <div class="col-6">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Doe" required>
+                  </div>
+                  <div class="col-12">
+                    <label>Address</label>
+                    <input type="text" placeholder="0665 Broadway NY, New York 10001" required>
+                  </div>
+                  <div class="col-6">
+                    <label>Email ID</label>
+                    <input type="email" placeholder="info@gmail.com" required>
+                  </div>
+                  <div class="col-6">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="9183537282" required>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button class="common_btn" type="submit" style="border: 1px solid;">Book Class</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Form Modal-->
+
+    <!-- Modal Video-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <iframe width="" height="400" src="https://www.youtube.com/embed/y6E1L6KVwYw?si=AEO1g8Lui-Cy7VHp&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal Video-->
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Jquery JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--Jquery JS-->
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!--Bootstrap JS-->
+    <!--Slick JS-->
+    <script src="js/slick.min.js"></script>
+    <!--Slick JS-->
+
+    <!--custom JS-->
+    <script src="js/custom.js"></script>
+    <script src="js/fancybox.min.js"></script>
+    <script src="js/textanimation.js"></script>
+    <!--custom JS-->
+
+    <!---animation-js-->
+    <script src="js/aos.js"></script>
+    <script>
+      // Init AOS
+      function aos_init() {
+        AOS.init({
+          duration: 1000,
+          easing: "ease-in-out-back",
+          once: true
+        });
+      }
+      $(window).on('load', function() {
+        aos_init();
+      });
+    </script>
+    <!---animation-js-->
+    
+    <script>
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+          $('.scrolltop:hidden').stop(true, true).fadeIn();
+        } else {
+          $('.scrolltop').stop(true, true).fadeOut();
+        }
+      });
+    </script>
+  </body>
+</html>

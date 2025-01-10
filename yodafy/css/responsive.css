@@ -1,0 +1,280 @@
+@media (min-width: 320px) and (max-width: 767px){ 
+
+.banner img {
+    height: 690px;
+}
+.caption-block {
+    top: 58%;
+}
+#path-breaking {
+    margin-top: 20px;
+}
+#path-breaking h5 {
+    font-size: 20px;
+}
+#path-breaking::before {
+    width: 100%;
+    height: 150px;
+}
+#full-stack h3 {
+    font-size: 20px;
+}
+#apply-area h3 {
+    font-size: 20px;
+}
+.apply-h5 {
+    font-size: 20px;
+}
+.copyright {
+    font-size: 13px !important;
+}
+.caption-block h1 {
+    font-size: 22px;
+    padding-bottom: 16px;
+}
+.caption-block h3 {
+    font-size: 20px;
+}
+.slider-texts {
+    position: relative;
+}
+.banner {
+    margin-bottom: 0;
+}
+.form-til {
+    font-size: 22px;
+}
+.area_pddng {
+    padding: 40px 0;
+    padding-bottom: 0px;
+}
+.sec-cont h3 {
+    font-size: 22px;
+    line-height: 130%;
+}
+.mr-lft {
+    padding-left: 0px;
+    padding-top: 20px;
+}
+.sec-cont h3 {
+    text-align: left !important;
+}
+#full-stack {
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+.course-ul li {
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 21%);
+    padding: 20px;
+}
+.course-ul li::after {
+	display: none;
+}
+.course-button {
+    margin-top: 0;
+}
+#apply-area {
+    padding: 20px 10px;
+}
+#apply-area::before {
+    width: 100%;
+    bottom: 0;
+    height: 150px;
+    top: 380px;
+}
+.sec-cont h3 span {
+    font-size: 20px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1023px){ 
+
+.banner img {
+    height: 523px;
+}
+.caption-block {
+    top: 54%;
+}
+#path-breaking {
+    margin-top: 20px;
+}
+#path-breaking h5 {
+    font-size: 20px;
+    text-align: justify;
+}
+#full-stack h3 {
+    font-size: 20px;
+}
+#apply-area h3 {
+    font-size: 20px;
+}
+.apply-h5 {
+    font-size: 20px;
+}
+.caption-block h1 {
+    font-size: 35px;
+}
+.slider-texts {
+    position: relative;
+}
+.banner {
+    margin-bottom: 0;
+}
+.form-til {
+    font-size: 22px;
+}
+.area_pddng {
+    padding: 40px 0;
+    padding-bottom: 0px;
+}
+.sec-cont h3 {
+    font-size: 22px;
+    line-height: 130%;
+    text-align: justify;
+}
+#path-breaking::before {
+    width: 20%;
+    height: 320px;
+}
+.left-img img {
+    height: 200px;
+}
+.mr-lft {
+    padding-left: 0px;
+    padding-top: 20px;
+}
+#full-stack {
+    padding-top: 15px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+#apply-area {
+    margin-top: 40px;
+}
+.course-ul li {
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 21%);
+    padding: 40px;
+}
+.course-ul li::after {
+	display: none;
+}
+.course-button {
+    margin-top: 0;
+}
+#apply-area {
+    padding: 20px 10px;
+}
+#apply-area::before {
+    width: 14%;
+}
+.sec-cont h3 span {
+    font-size: 20px;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1201px) and (max-width: 1280px){
+
+
+
+
+
+
+
+}
+
+
+
+@media (min-width: 1100px) and (max-width: 1200px){
+
+
+
+	.bottom-head{padding: 15px 0;}
+
+	ul.menu li a{font-size: 13px;}
+
+	.new-menu{width: 100%;}
+
+	.navicon{position: absolute !important; right: -24px;}
+
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1099px){ 
+
+
+
+
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px){ 
+
+
+
+
+
+}
+
+
+
+@media (min-width: 640px) and (max-width: 767px){ 
+
+
+
+
+
+}
+
+
+
+@media (min-width: 480px) and (max-width: 639px){ 
+
+
+
+
+
+}
+
+
+
+@media (min-width: 360px) and (max-width: 479px){ 
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
