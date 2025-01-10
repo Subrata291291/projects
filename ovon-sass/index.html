@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ovon Sass Project</title>
+    <meta name="description" content="">
+    <meta name="robots" content="noindex, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/facial.png">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Bootstrap 5 -->
+    <!--font aswome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--font aswome -->
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="scss/header.css">
+    <link rel="stylesheet" href="scss/index.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <!-- Stylesheets -->
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="scss/fancybox.min.css">
+    <!-- Stylesheets -->
+    <!--Slick css-->
+    <link rel="stylesheet" type="text/css" href="scss/slick.css">
+    <link rel="stylesheet" type="text/css" href="scss/slick-theme.css">
+    <!--Slick css-->
+    <!--aos css-->
+    <link rel="stylesheet" type="text/css" href="scss/aos.css">
+    <!--aos css-->
+  </head>
+  <body>
+    <!--Loader-->
+    <div id="loading">
+      <img id="loading-image" src="images/loader.gif" class="img-fluid" alt="Loading...">
+    </div>
+    <!--Loader-->
+    <!--Header Area-->
+    <header class="header_area w-100">
+      <nav class="navbar navbar-expand-md  shadow">
+        <div class="container position-relative">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo-dark.png" alt="logo">
+          </a>
+          <button class="navbar-toggler p-0 border-0" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <div class="navbar_icon">
+              <span class="line1"></span>
+              <span class="line2"></span>
+              <span class="line3"></span>
+            </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-auto mb-lg-0 primary_nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="portfolio.html"> Portfolio </a>
+              </li>
+              <li class="nav-item dropdown dropdown-mega mega_menu position-static">
+                <a class="nav-link dropdown-toggle" href="service.html"> Service </a>
+                <ul class="dropdown-menu shadow">
+                  <li>
+                    <a class="dropdown-item" href="index.html"> Bdidal Makeup </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="index.html"> Mahendi </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="index.html"> Party Makeup </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="index.html"> Eyelash Makeup </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="index.html"> Facial Makeup </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="index.html"> Haircut </a>
+                  </li>
+                  <!-- <li class="dropstart">
+                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Submenu Left</a>
+                    <ul class="dropdown-menu shadow">
+                      <li>
+                        <a class="dropdown-item" href="index.html"> Blog </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="index.html"> Blog </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="index.html"> Blog </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="index.html"> Blog </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="index.html"> Blog </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropend">
+                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">Submenu Right</a>
+                    <ul class="dropdown-menu shadow">
+                      <li>
+                        <a class="dropdown-item" href="index.html"> Blog </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="index.html"> Blog </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="index.html"> Blog </a>
+                      </li>
+                      <li class="dropend">
+                        <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Let's go deeper!</a>
+                        <ul class="dropdown-menu dropdown-submenu shadow">
+                          <li>
+                            <a class="dropdown-item" href="index.html"> Blog </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="index.html"> Blog </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="index.html"> Blog </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="index.html"> Blog </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="index.html"> Blog </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="index.html"> Blog </a>
+                      </li>
+                    </ul>
+                  </li> -->
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html"> Blog </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"> Contact </a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="offcanvas offcanvas-start d-lg-none d-md-none d-block" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                <a class="navbar-brand" href="#">
+                  <img src="images/logo-light.png" alt="logo">
+                </a>
+              </h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto me-auto mb-lg-0 primary_nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html"> Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="portfolio.html"> Portfolio </a>
+                </li>
+                <li class="nav-item dropdown dropdown-mega mega_menu position-static">
+                  <a class="nav-link dropdown-toggle" href="service.html"> Service </a>
+                  <ul class="dropdown-menu shadow">
+                    <li>
+                      <a class="dropdown-item" href="index.html"> Bdidal Makeup </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="index.html"> Mahendi </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="index.html"> Party Makeup </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="index.html"> Eyelash Makeup </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="index.html"> Facial Makeup </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="index.html"> Haircut </a>
+                    </li>
+                    <!-- <li class="dropstart">
+                      <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Submenu Left</a>
+                      <ul class="dropdown-menu shadow">
+                        <li>
+                          <a class="dropdown-item" href="index.html"> Blog </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="index.html"> Blog </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="index.html"> Blog </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="index.html"> Blog </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="index.html"> Blog </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropend">
+                      <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">Submenu Right</a>
+                      <ul class="dropdown-menu shadow">
+                        <li>
+                          <a class="dropdown-item" href="index.html"> Blog </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="index.html"> Blog </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="index.html"> Blog </a>
+                        </li>
+                        <li class="dropend">
+                          <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Let's go deeper!</a>
+                          <ul class="dropdown-menu dropdown-submenu shadow">
+                            <li>
+                              <a class="dropdown-item" href="index.html"> Blog </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="index.html"> Blog </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="index.html"> Blog </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="index.html"> Blog </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="index.html"> Blog </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="index.html"> Blog </a>
+                        </li>
+                      </ul>
+                    </li> -->
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html"> Blog </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html"> Contact </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="right_menu">
+            <li class="position-relative">
+              <div class="serach_box">
+                <a href="#">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="cart_area position-relative">
+                <a href="#">
+                  <i class="fa fa-shopping-basket"></i>
+                </a>
+                <span>0</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="thetop"></div>
+    <!--Header Area-->
+    <!--Banner Area-->
+    <section class="banner_area position-relative">
+      <div class="banner_video">
+          <video playsinline="" autoplay="" loop="" muted="" class="w-100">
+            <source src="images/makeup.mp4" type="video/mp4" autoplay="" loop="" muted="">
+            <source src="images/makeup.webm" type="video/webm" autoplay="" loop="" muted="">
+        </video>
+      </div>
+      <div class="container">
+        <div class="banner_box">
+          <h3 class="title">Makeup Artist</h3>
+          <h4>oliva vonda</h4>
+          <button class="btn button about_me_btn position-relative"  onclick="window.location.href='#about-us'">About Me</button>
+        </div>
+      </div>
+    </section>
+    <!--Banner Area-->
+    <!--About Area-->
+    <section class="about_area custom_gap" id="about-us"   data-aos="fade-up">
+      <div class="container">
+        <div class="row gx-lg-5 gx-md-0 gx-0">
+          <div class="col-lg-5">
+            <div class="about_left position-relative" data-aos="flip-left">
+              <img src="images/about.jpg" alt="about" class="img-fluid w-100">
+              <img src="images/signature.png" alt="signature" class="signature-pic position-absolute">
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="about_right" data-aos="zoom-in">
+              <div class="title_box">
+                <h3 class="title">about me</h3>
+                <h4 class="description">OLIVIA VONDA</h4>
+                <hr class="line line-hr-secondary mb-5">
+              </div>
+                <p>
+                  Hi, I'm Olivia a Professional Makeup Artist. Quisque luctus tincidunt enim dapibus pharetra neue ultricies at. Morbi dapibus mauris id scelerisque placerat nula massa lacinia orci in facilisis nulla quam volutpat lectus. Nunc elementum ante commodo felis hendrerit.
+                </p><br>
+                <p>
+                  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Makeup a urnue sem tempor ullamcorper. Praesent sapien felis porttitor ut eros pharetra fermentum solli citudi metus. Quisque facilisis libero libero eget cursus ex maximus non. Quisque volutpat venenatis lacus. Nullam ac sapien sed metus varius mattis et vel magna.
+                </p>
+                <div class="award_area mt-5">
+                  <div class="title_box">
+                    <h3 class="title">Award</h3>
+                    <hr class="line line-hr-secondary mb-5">
+                  </div>
+                  <div class="award_slider p-0">
+                    <div class="slider position-relative slider-1">
+                        <div class="award_box">
+                          <img src="images/award.jpg" alt="award" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="slider position-relative slider-1">
+                        <div class="award_box">
+                          <img src="images/award.jpg" alt="award" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="slider position-relative slider-1">
+                        <div class="award_box">
+                          <img src="images/english.jpg" alt="english" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="slider position-relative slider-1">
+                        <div class="award_box">
+                          <img src="images/gold.jpg" alt="gold" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="slider position-relative slider-1">
+                        <div class="award_box">
+                          <img src="images/makeup.jpg" alt="makeup" class="img-fluid">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--About Area-->
+    <!--Service Area-->
+    <section class="service_area" data-aos="fade-up">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+            <div class="service_left" data-aos="zoom-in">
+              <div class="title_box">
+                <h3 class="title">services</h3>
+                <h4 class="description">service we provide</h4>
+                <hr class="line line-hr-secondary mb-5">
+              </div>
+                <p>
+                  Hi, I'm Olivia a Professional Makeup Artist. Quisque luctus tincidunt enim dapibus pharetra neue ultricies at. Morbi dapibus mauris id scelerisque placerat nula massa lacinia orci in facilisis nulla quam volutpat lectus. Nunc elementum ante commodo felis hendrerit.
+                </p><br>
+                <p>
+                  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Makeup a urnue sem tempor ullamcorper. Praesent sapien felis porttitor ut eros pharetra fermentum solli citudi metus. Quisque facilisis libero libero eget cursus ex maximus non. Quisque volutpat venenatis lacus. Nullam ac sapien sed metus varius mattis et vel magna.
+                </p>
+                <button class="btn button service-btn position-relative" onclick="window.location.href='portfolio.html'">read more</button>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+            <div class="service_right offset-lg-1">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-6 service_box">
+                  <div class="service-pic">
+                    <img src="images/facial.png" alt="facial">
+                    <h5>Facial Makeup</h5>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-6 service_box">
+                  <div class="service-pic">
+                    <img src="images/eyelash.png" alt="eyelash">
+                    <h5>Eyelash Makeup</h5>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-6 service_box">
+                  <div class="service-pic">
+                    <img src="images/eye.png" alt="eye">
+                    <h5>Eye Makeup</h5>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-6 service_box">
+                  <div class="service-pic">
+                    <img src="images/eyebrow.png" alt="eyebrow">
+                    <h5>Eyebrow Makeup</h5>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-6 service_box">
+                  <div class="service-pic">
+                    <img src="images/haircut.png"alt="haircut">
+                    <h5>Haircut Makeup</h5>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-6 service_box">
+                  <div class="service-pic">
+                    <img src="images/party-makeup.png" alt="party-makeup">
+                    <h5>Party Makeup</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Service Area-->
+    <!--gallery Area-->
+    <section class="gallery_area custom_gap" data-aos="fade-up">
+      <div class="container">
+        <div class="title_box">
+          <h3 class="title">gallery</h3>
+          <h4 class="description">Portfolio</h4>
+          <hr class="line line-hr-secondary mb-5">
+        </div>
+        <div class="gallery">
+          <div class="row">
+            <div class="col-md-4 col-4">
+              <div class="content" style="display: block;">
+                <a href="images/p1.png" data-fancybox="mygallery" data-caption="menu-1" title="p1">
+                  <img src="images/p1.png" alt="p1">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-4">
+              <div class="content" style="display: block;">
+                <a href="images/p2.png" data-fancybox="mygallery" data-caption="menu-1" title="p2">
+                  <img src="images/p2.png" alt="p2">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-4">
+              <div class="content" style="display: block;">
+                <a href="images/p3.jpg" data-fancybox="mygallery" data-caption="menu-1" title="p3">
+                  <img src="images/p3.jpg" alt="p3">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-4">
+              <div class="content" style="display: block;">
+                <a href="images/p4.jpg" data-fancybox="mygallery" data-caption="menu-1" title="p4">
+                  <img src="images/p4.jpg" alt="p4">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-4">
+              <div class="content" style="display: block;">
+                <a href="images/p5.jpg" data-fancybox="mygallery" data-caption="menu-1" title="p5">
+                  <img src="images/p5.jpg" alt="p5">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-4">
+              <div class="content" style="display: block;">
+                <a href="images/p6.jpg" data-fancybox="mygallery" data-caption="menu-1" title="p6">
+                  <img src="images/p6.jpg" alt="p6">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="btn button view_more_btn position-relative">Load More</button>
+      </div>
+      </div>
+    </section>
+    <!--gallery Area-->
+    <!--Review Area-->
+    <div class="review_area position-relative" data-aos="fade-up">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="review_left position-relative">
+              <div class="title_box">
+                <h3 class="title">Need to Discuss?</h3>
+                <h4 class="description">Do you need help with creative Makeup?</h4>
+                <hr class="line line-hr-secondary mb-5">
+                <button class="btn form-btn button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Query Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="review_right position-relative" data-aos="flip-right">
+              <h3>Reviews!</h3>
+              <hr class="line line-hr-secondary mb-5">
+              <div class="review_slider p-0">
+                <div class="slider position-relative slider-1">
+                    <div class="review_box">
+                      <p>
+                        " After having had my eyelash extensions done by two other therapists with mixed results, I decided to go to Ovon and I was very impressed with the service, and how natural they look. You don’t even need to use mascara. I now couldn’t imagine life without lashes! "
+                      </p>
+                      <span>Lucy Brown</span>
+                      <span class="quote-icon"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+                <div class="slider position-relative slider-1">
+                  <div class="review_box">
+                    <p>
+                      " After having had my eyelash extensions done by two other therapists with mixed results, I decided to go to Ovon and I was very impressed with the service, and how natural they look. You don’t even need to use mascara. I now couldn’t imagine life without lashes! "
+                    </p>
+                    <span>Lucy Brown</span>
+                    <span class="quote-icon"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+                <div class="slider position-relative slider-1">
+                  <div class="review_box">
+                    <p>
+                      " After having had my eyelash extensions done by two other therapists with mixed results, I decided to go to Ovon and I was very impressed with the service, and how natural they look. You don’t even need to use mascara. I now couldn’t imagine life without lashes! "
+                    </p>
+                    <span>Lucy Brown</span>
+                    <span class="quote-icon"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+                <div class="slider position-relative slider-1">
+                  <div class="review_box">
+                    <p>
+                      " After having had my eyelash extensions done by two other therapists with mixed results, I decided to go to Ovon and I was very impressed with the service, and how natural they look. You don’t even need to use mascara. I now couldn’t imagine life without lashes! "
+                    </p>
+                    <span>Lucy Brown</span>
+                    <span class="quote-icon"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Review Area-->
+    <!--Blog Area-->
+    <section class="blog_area custom_gap" data-aos="fade-up">
+      <div class="container">
+        <div class="title_box">
+          <h3 class="title">Blogs</h3>
+          <h4 class="description">Laest Works</h4>
+          <hr class="line line-hr-secondary mb-5">
+        </div>
+        <div class="blog_slider p-0">
+          <div class="slider position-relative slider-1">
+            <div class="blog-box">
+              <div class="blog-pic position-relative">
+                <img src="images/b-1.jpg" alt="b-1" class="w-100 img-fluid">
+                <span class="blog-date position-absolute">27th july 2024</span>
+              </div>
+              <div class="blog-content">
+                <h4 class="blog-category">Makeup</h4>
+                <h5 class="text-truncate">5-Minute Natural Makeup Tutorial</h5>
+                <p>Quisque facilisis libero viventa egeten cursus ex maximus non. Quisque miss volutpat venenatis hendrerit...</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider position-relative slider-1">
+            <div class="blog-box">
+              <div class="blog-pic position-relative">
+                <img src="images/b-2.jpg" alt="b-1" class="w-100 img-fluid">
+                <span class="blog-date position-absolute">27th july 2024</span>
+              </div>
+              <div class="blog-content">
+                <h4 class="blog-category">Makeup</h4>
+                <h5 class="text-truncate">Bridal Beauty Trends</h5>
+                <p>Quisque facilisis libero viventa egeten cursus ex maximus non. Quisque miss volutpat venenatis hendrerit...</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider position-relative slider-1">
+            <div class="blog-box">
+              <div class="blog-pic position-relative">
+                <img src="images/b-3.jpg" alt="b-1" class="img-fluid w-100">
+                <span class="blog-date position-absolute">27th july 2024</span>
+              </div>
+              <div class="blog-content">
+                <h4 class="blog-category">Makeup</h4>
+                <h5 class="text-truncate">Bridal Beauty Trends</h5>
+                <p>Quisque facilisis libero viventa egeten cursus ex maximus non. Quisque miss volutpat venenatis hendrerit...</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider position-relative slider-1">
+            <div class="blog-box">
+              <div class="blog-pic position-relative">
+                <img src="images/b-1.jpg" alt="b-1" class="img-fluid w-100">
+                <span class="blog-date position-absolute">27th july 2024</span>
+              </div>
+              <div class="blog-content">
+                <h4 class="blog-category">Makeup</h4>
+                <h5 class="text-truncate">Bridal Beauty Trends</h5>
+                <p>Quisque facilisis libero viventa egeten cursus ex maximus non. Quisque miss volutpat venenatis hendrerit...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Blog Area-->
+    <!-- Footer Area -->
+    <section class="footer_area" data-aos="fade-up">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3  col-md-12 col-12">
+            <div class="footer_box">
+              <img src="images/logo-dark.png" alt="logo-footer" style="max-width: 20rem;">
+              <p>Makeup amacus suscipit oremen miss the volutpat magnaz donec miss the drana risus convais nisan.</p>
+              <ul class="d-flex align-items-center social_links mt-5">
+                <li>
+                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-12 offset-lg-1">
+            <div class="work_time">
+              <h3 class="footer-title">Work Time</h3>
+                <ul>
+                  <li>
+                    <div class="tit">Monday - Friday</div>
+                    <div class="dots"></div> <span>8:00 AM - 7:00 PM</span>
+                  </li>
+                  <li>
+                    <div class="tit">Saturday</div>
+                    <div class="dots"></div> <span>9:00 AM - 6:00 PM</span>
+                  </li>
+                  <li>
+                    <div class="tit">Sunday</div>
+                    <div class="dots"></div> <span style="color:#db0f73;">Closed</span>
+                  </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 offset-lg-1">
+            <div class="contact_details">
+              <h3 class="footer-title">Contact Us</h3>
+                <ul>
+                  <li>
+                    <p>
+                      0665 Broadway NY, New York 10001<br>United States of America
+                    </p>
+                  </li>
+                  <li>
+                    <p><a href="tel:1234567890">1234567890</a></p>
+                  </li>
+                  <li>
+                    <p><a href="mailto:sub@gmail.com">sub@gmail.com</a></p>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="copyright text-center">
+            <p>Copyright <span style="color: #db0f73;">@</span> 2024 Makeup Studio. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Area -->
+    <!-- Go to Top Area -->
+    <div class="scrolltop" style="display: block;">
+      <div class="scroll icon">
+        <a href="#thetop"><i class="fa fa-4x fa-angle-up"></i></a>
+      </div>
+    </div>
+    <!-- Go to Top Area -->
+
+    <!-- Modal -->
+    <div class="modal fade form-modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content shadow">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Query Form</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="thankyou.php" method="post">
+              <div class="container">
+                <div class="form-row row">
+                  <div class="form-group col-md-6 form-floating mb-3">
+                    <input type="text" name="name" id="floatingInput" placeholder="Name" class="form-control" autocomplete="off" required>
+                    <label for="floatingInput">Your Name</label>
+                  </div>
+                  <div class="form-group col-md-6 form-floating mb-3">
+                    <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" autocomplete="off" required>
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-group col-md-6 form-floating mb-3">
+                    <input type="tel" name="phone" min="0" max="9" onkeypress="if (this.value.length > 9) return false;" class="form-control" id="floatingInput" placeholder="0000-0000-00" autocomplete="off" required>
+                    <label for="floatingInput">Phone Number</label>
+                  </div>
+                  <div class="form-group col-md-6 form-floating mb-3">
+                    <select class="form-select form-control" name="service" id="floatingSelect" aria-label="Floating label select example">
+                      <option selected>Select Service</option>
+                      <option value="Bridal Makeup">Bridal Makeup</option>
+                      <option value="Hair Styling">Hair Styling</option>
+                      <option value="Eyelash Makeup">Eyelash Makeup</option>
+                    </select>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" name="query" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                  </div>
+                </div>
+                <div class="text-center"><button type="submit" name="submit" class="submit_btn button">Submit</button></div>
+              </div>
+            </form> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!--Bootstrap JS-->
+    <!--Jquery JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--Jquery JS-->
+    <!--Slick JS-->
+    <script src="js/slick.min.js"></script>
+    <!--Slick JS-->
+    <!--Slick JS-->
+    <script src="js/custom.js"></script>
+    <!--Slick JS-->
+    <!---Loader-js-->
+    <script>
+      $(window).on('load', function() {
+        $('#loading').hide();
+      });
+    </script>
+    <!---Loader-js-->
+    <!---animation-js-->
+    <script src="js/aos.js"></script>
+    <script>
+      // Init AOS
+      function aos_init() {
+        AOS.init({
+          duration: 1000,
+          easing: "ease-in-out-back",
+          once: true
+        });
+      }
+      $(window).on('load', function() {
+        aos_init();
+      });
+    </script>
+    <!---animation-js-->
+    <script>
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+          $('.scrolltop:hidden').stop(true, true).fadeIn();
+        } else {
+          $('.scrolltop').stop(true, true).fadeOut();
+        }
+      });
+    </script>
+    <!---fancybox---->
+    <script src="js/fancybox.min.js"></script>
+    <!---fancybox---->
+  </body>
+</html>
