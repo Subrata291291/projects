@@ -1,0 +1,60 @@
+// Mixin
+@mixin flexprop {
+    display: flex;
+    align-items: center;
+}
+@mixin bg-prop {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@mixin h3-font-prop {
+    color: $primary-color;
+    font-size: 2rem;
+    margin-bottom: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+@mixin h4-font-prop {
+    color: #000;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+@mixin button-prop {
+    background-color: $primary-color;
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: 0rem;
+    text-transform: capitalize;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    font-weight: 300;
+}
+@mixin common-btn-prop {
+    background-color: $primary-color;
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: 0rem;
+    text-transform: capitalize;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+}
+@mixin common-btn-prop-hover {
+    width: 1.5rem;
+}
+@mixin common-btn-prop-before {
+    content: "";
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    width: 0;
+    height: 1px;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+// .footer_menu ul {
+//     @include flexprop;
+// }
